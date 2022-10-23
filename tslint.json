@@ -125,6 +125,7 @@
         "check-typecast"
       ]
     },
+    "no-trailing-whitespace": [true, "ignore-blank-lines"],
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
     "no-input-rename": true,
