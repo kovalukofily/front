@@ -3,5 +3,8 @@
     <strong>Airport</strong>
   </div>
 
-  <div>Weather here</div>
+  <div>
+    <span>Weather in Kyiv: </span>
+    <span>{{(weather | async)?.description}}, {{(weather | async)?.temperature}}C</span>
+  </div>
 </div>

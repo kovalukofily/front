@@ -11,4 +11,12 @@ export class ContentService {
   getWeather(): Observable<any> {
     return this.http.get( 'https://kovalukofily-backend.herokuapp.com/kyiv_weather')
   }
+
+  getDepartures(): Observable<any> {
+    return this.http.get( 'https://kovalukofily-backend.herokuapp.com/departures')
+  }
+
+  getArrivals(): Observable<any> {
+    return this.http.get( 'https://kovalukofily-backend.herokuapp.com/arrivals')
+  }
 }
