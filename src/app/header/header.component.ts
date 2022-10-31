@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from 'rxjs';
-import {ContentService} from '../content/content.service';
+import {HeaderService} from './header.service';
 
 @Component({
   selector: 'app-header',
@@ -10,10 +10,10 @@ import {ContentService} from '../content/content.service';
 export class HeaderComponent implements OnInit {
   weather: Observable<any>
 
-  constructor(public contentService: ContentService) { }
+  constructor(public headerService: HeaderService) { }
 
   ngOnInit(): void {
-    this.weather = this.contentService.getWeather()
+    this.weather = this.headerService.getWeather()
   }
 
 }

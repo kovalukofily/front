@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import {MatTableModule} from '@angular/material/table';
 import {ContentService} from './content/content.service';
 import {HttpClientModule} from '@angular/common/http';
+import {HeaderService} from './header/header.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatTableModule,
     HttpClientModule,
   ],
-  providers: [ContentService],
+  providers: [ContentService, HeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
