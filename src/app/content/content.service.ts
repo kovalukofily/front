@@ -9,10 +9,10 @@ export class ContentService {
   }
 
   getDepartures(): Observable<any> {
-    return this.http.get( 'https://kovalukofily-lab2.herokuapp.com/departures')
+    return this.http.get( 'https://kovalukofily-lab4.herokuapp.com/departures')
   }
 
   getArrivals(): Observable<any> {
-    return this.http.get( 'https://kovalukofily-lab2.herokuapp.com/arrivals')
+    return this.http.get( 'https://kovalukofily-lab4.herokuapp.com/arrivals')
   }
 }
