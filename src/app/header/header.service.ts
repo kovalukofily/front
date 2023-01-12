@@ -9,6 +9,6 @@ export class HeaderService {
   }
 
   getWeather(): Observable<any> {
-    return this.http.get( 'https://kovalukofily-lab4.herokuapp.com/kyiv_weather')
+    return this.http.get( 'https://kovalukofily-backend-airport.herokuapp.com/kyiv_weather')
   }
 }
