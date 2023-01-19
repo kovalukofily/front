@@ -19,11 +19,11 @@ export class ContentComponent implements OnInit {
 
   ngOnInit(): void {
     this.contentService.getArrivals().subscribe(data => {
-      this.arrivalDataSource.data = data.flights
+      this.arrivalDataSource.data = data
     })
 
     this.contentService.getDepartures().subscribe(data => {
-      this.departureDataSource.data = data.flights
+      this.departureDataSource.data = data
     })
   }
 
